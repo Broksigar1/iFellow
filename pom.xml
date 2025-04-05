@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <lomboc_version>1.18.38</lomboc_version>
   </properties>
 
   <dependencies>
@@ -21,5 +22,13 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lomboc_version}</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
+
 </project>
