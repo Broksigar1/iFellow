@@ -1,6 +1,6 @@
-package ru.IFellow.Car.carBrands;
+package ru.IFellow.carBrands;
 
-import ru.IFellow.Car.Car;
+import ru.IFellow.Car;
 
 import java.awt.*;
 
@@ -12,7 +12,7 @@ public class BMW extends Car
     }
 
     @Override
-    public void RepaintCar(Color newColor)
+    public void repaintCar(Color newColor)
     {
         System.out.println("BMW должна быть черного цвета");
         color = Color.BLACK;

@@ -1,7 +1,7 @@
-package ru.IFellow.Car.carBrands;
+package ru.IFellow.carBrands;
 
-import ru.IFellow.Car.Car;
-import ru.IFellow.Car.SteeringWheelLocation;
+import ru.IFellow.Car;
+import ru.IFellow.SteeringWheelLocation;
 
 import java.awt.*;
 
@@ -24,9 +24,9 @@ public class Suzuki extends Car
     }
 
     @Override
-    public void PrintInfoAboutCar()
+    public void printInfoAboutCar()
     {
         System.out.println("Steering wheel location - " + steeringWheelLocation.toString());
-        super.PrintInfoAboutCar();
+        super.printInfoAboutCar();
     }
 }

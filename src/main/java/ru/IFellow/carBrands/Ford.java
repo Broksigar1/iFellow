@@ -1,6 +1,6 @@
-package ru.IFellow.Car.carBrands;
+package ru.IFellow.carBrands;
 
-import ru.IFellow.Car.Car;
+import ru.IFellow.Car;
 
 import java.awt.*;
 

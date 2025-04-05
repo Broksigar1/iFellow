@@ -1,7 +1,7 @@
-package ru.IFellow.Car.carBrands;
+package ru.IFellow.carBrands;
 
-import ru.IFellow.Car.Car;
-import ru.IFellow.Car.CarHandler;
+import ru.IFellow.Car;
+import ru.IFellow.CarHandler;
 
 import java.awt.*;
 
@@ -16,9 +16,9 @@ public class Opel extends Car
     }
 
     @Override
-    public void PrintInfoAboutCar()
+    public void printInfoAboutCar()
     {
-        System.out.println("Interior color - " + CarHandler.GetColorName(interiorColor));
-        super.PrintInfoAboutCar();
+        System.out.println("Interior color - " + CarHandler.getColorName(interiorColor));
+        super.printInfoAboutCar();
     }
 }

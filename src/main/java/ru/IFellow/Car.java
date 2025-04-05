@@ -1,4 +1,4 @@
-package ru.IFellow.Car;
+package ru.IFellow;
 
 import lombok.Getter;
 
@@ -27,10 +27,10 @@ public abstract class Car
         this.engineVolume = engineVolume;
     }
 
-    public void PrintInfoAboutCar()
+    public void printInfoAboutCar()
     {
         System.out.println("Brand - " + brand);
-        System.out.println("Color - " + CarHandler.GetColorName(color));
+        System.out.println("Color - " + CarHandler.getColorName(color));
         System.out.println("Year of manufacture - " + yearOfManufacture);
         System.out.println("Amount of seats - " + seatsAmount);
         System.out.println("Max speed - " + maxSpeed);
@@ -38,7 +38,7 @@ public abstract class Car
         System.out.println("Engine volume - " + engineVolume);
     }
 
-    public void RepaintCar(Color newColor)
+    public void repaintCar(Color newColor)
     {
         color = newColor;
     }

@@ -1,6 +1,6 @@
-package ru.IFellow.Car.carBrands;
+package ru.IFellow.carBrands;
 
-import ru.IFellow.Car.Car;
+import ru.IFellow.Car;
 
 import java.awt.*;
 
@@ -12,9 +12,9 @@ public class Toyota extends Car
     }
 
     @Override
-    public void PrintInfoAboutCar()
+    public void printInfoAboutCar()
     {
         System.out.println("Информация об автомобиле лучшей марки в мире!");
-        super.PrintInfoAboutCar();
+        super.printInfoAboutCar();
     }
 }

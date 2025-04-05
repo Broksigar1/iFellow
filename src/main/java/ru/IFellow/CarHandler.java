@@ -1,4 +1,4 @@
-package ru.IFellow.Car;
+package ru.IFellow;
 
 import java.awt.*;
 import java.lang.reflect.Field;
@@ -6,13 +6,13 @@ import java.util.List;
 
 public class CarHandler
 {
-    public static void GetInfoAboutCarsWhichWasManufacturedAfter2006(List<Car> cars)
+    public static void getInfoAboutCarsWhichWasManufacturedAfterSpecifiedYear(List<Car> cars, int year)
     {
         for (Car car : cars)
         {
-            if (car.getYearOfManufacture() > 2006)
+            if (car.getYearOfManufacture() > year)
             {
-                car.PrintInfoAboutCar();
+                car.printInfoAboutCar();
             }
             else
             {
@@ -23,15 +23,15 @@ public class CarHandler
         }
     }
 
-    public static void RepaintCarInRedIfItGreen(Car car)
+    public static void repaintCarIfItGreen(Car car, Color newColor)
     {
         if (car.getColor() == Color.GREEN)
         {
-            car.RepaintCar(Color.RED);
+            car.repaintCar(newColor);
         }
     }
 
-    public static void PrintInfoAboutOldestCarInList(List<Car> cars)
+    public static void printInfoAboutOldestCarInList(List<Car> cars)
     {
         Car oldestCar = cars.get(0);
         for (int i = 1; i < cars.size(); i++)
@@ -42,10 +42,10 @@ public class CarHandler
             }
         }
 
-        oldestCar.PrintInfoAboutCar();
+        oldestCar.printInfoAboutCar();
     }
 
-    public static String GetColorName(Color color)
+    public static String getColorName(Color color)
     {
         for (Field field : Color.class.getFields())
         {
