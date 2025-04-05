@@ -26,8 +26,24 @@ public class Main
         cars.add(new Ford("Ford", Color.BLUE, 2026, 380, 2, 1000, 4));
         cars.add(new Opel("Opel", Color.GREEN, Color.PINK, 2018, 200, 5, 41_000, 1.4));
         cars.add(new Opel("Opel", Color.GREEN, Color.PINK, 2018, 200, 5, 50_000, 1.4));
-        cars.add(new Suzuki("Suzuki", Color.GREEN, 2002, 280, 5, 50_000, 2, SteeringWheelLocation.Left));
-        cars.add(new Suzuki("Suzuki", Color.GREEN, 2008, 280, 5, 50_000, 2, SteeringWheelLocation.Right));
+        cars.add(new Suzuki(
+                "Suzuki",
+                Color.GREEN,
+                2002,
+                280,
+                5,
+                50_000,
+                2,
+                SteeringWheelLocation.Left));
+        cars.add(new Suzuki(
+                "Suzuki",
+                Color.GREEN,
+                2008,
+                280,
+                5,
+                50_000,
+                2,
+                SteeringWheelLocation.Right));
         cars.add(new Toyota("Toyota", Color.BLACK, 1999, 220, 5, 550_000, 3.5));
         cars.add(new Toyota("Toyota", Color.GREEN, 2021, 255, 4, 200, 2));
 
